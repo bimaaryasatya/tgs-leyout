@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+  header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(32, 32, 32, 0.027);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.377);
+  backdrop-filter: blur(10px);
+  }
+  .title{
+    font-size: 40px;
+    text-align: left;
+  }
+  .ul-nav{
+    font-weight: 700;
+    list-style: none;
+  }
+  .rectangled{
+    overflow: hidden;
+    background-color: #181818;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.329);
+    width: 100vw;
+    height: 50vh;
+    margin-right: 50%;
+    padding: 5%;
+    display: flex;
+    align-items: right;
+    z-index: 0;
+    border-radius: 75px;
+    transform: rotate(-45deg) translateX(1200px) translateY(200px);
+  }
+  .rectangled img{
+    height: 150%;
+    transform: rotate(45deg);
+    margin-top: -20px;
+    margin-left: -200px;
+  }
+  .rectangled-flipped {
+    background: linear-gradient(145deg, rgba(255,218,165,1) 0%, rgba(255,132,0,1) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.329);
+    width: 140vw;
+    height: 60vh;
+    margin-left: -25%;
+    padding: 5%;
+    display: flex;
+    align-items: left;
+    z-index: -1;
+    border-radius: 75px;
+    transform: rotate(45deg) translateX(-1200px) translateY(-200px);
+  }
+  .ul-cont, .ul-cont-2, .table{
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .title, .h4, .ul-cont{
+    position: relative;
+    z-index: 1;
+  }
+  .poin{
+    position: relative;
+    z-index: 1;
+  }
+  .content-container{
+    margin-top: -1500px;
+    padding: 150px;
+  }
+  tr,td{
+    color: aliceblue;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.603);
+  }
+  th{
+    color: aliceblue;
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid rgba(240, 248, 255, 0.603);
+    background-color: #111111;
+  }
+  .all-content{
+    margin-top: 50px;
+  }
+  a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+</style>
+<body style="overflow-x: hidden;overflow-y: hidden;background-color: rgb(245, 243, 220);font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+'Helvetica Neue', sans-serif;">
+    <header>
+      <img src="nav-logo.png" alt="nav-logo" style="width: 10%; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.726));">
+      <nav style="color: aliceblue; text-align: end; margin-right: 10px; transform: translateY(-50px);margin-bottom: -15px;">
+        <a href="https://invofest.com/seminar">Seminar</a> |
+        <a href="https://invofest.com/talkshow">Talkshow</a> |
+        <a href="https://invofest.com/workshop">Workshop</a> |
+        <a href="https://invofest.com/competition">Competition</a>
+        </nav>
+    </header>
+  <div class="all-content">
+  <div class="rectangled">
+    <img src="Maskot-Hero.png" alt="Maskot-Hero">
+  </div>
+
+  <div class="rectangled-flipped"></div>
+
+  <div class="content-container">
+    <div class="title">
+      <h2 style="color: rgb(250, 250, 250); font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
+      Tahoma, Geneva, Verdana, sans-serif;">IT TALKSHOW<br>Invofest 2024</h2>
+    </div>
+    <div class="poin">
+      <h4 style="font-size: xx-large;">Poin Penting yang Dibahas</h4>
+    </div>
+    <div style="display: flex; justify-content: space-between; width: 50%;">
+      <div class="ul-cont" style="width: 120%;padding: 20px; border-radius: 20px; margin-right: 20px;">
+        <h4 style="font-size: larger;">Gen Z dan AI</h4>
+        <p>Fokus pada peran penting generasi Z dalam memanfaatkan kecerdasan buatan 
+          untuk menciptakan solusi yang lebih ramah lingkungan dan berkelanjutan</p>
+      </div>
+      <div class="ul-cont-2" style="padding: 20px; margin-right: 35%; width: 130%;">
+        <h3>Pembicara Oleh:</h3>
+        <ul style="list-style: decimal; margin-left: -25px;">
+          <li>Nurul Arifiah Gunarsih</li>
+          <li>Muhamad Zaim Zamzami</li>
+          <li>Nofi Bayu Darmawan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="table" style="text-align: center; padding-left: 20px;padding-top: 20px;padding-right: 20px;padding-bottom: 200px; margin-right: 35%; transform: translate(550px, -555px);">
+      <h3 style="padding-top: 15px;margin-bottom: 15px ;font-size: xx-large; color: rgb(250, 250, 250); text-shadow: 0 4px 30px rgba(0, 0, 0, 0.705);">Apa saja yang dibahas?</h3>
+      <table style="transform: translateY(50px);border-collapse: collapse; margin: auto; background: rgb(68,68,68); background: linear-gradient(90deg, rgba(68,68,68,1) 0%, rgba(20,20,20,1) 100%);
+                    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.726));">
+        <tr>
+          <th>PEMBICARA</th>
+          <th>TOPIK</th>
+        </tr>
+        <tr>
+          <td>Muhamad Zaim Zamzami</td>
+          <td>Kebijakan AI dan Penggunaan AI untuk menjaga keseimbangan <br> antara teknologi dan dampak sosialnya</td>
+        </tr>
+        <tr>
+          <td>Nurul Arifiah Gunarsih</td>
+          <td>Penggunaan AI untuk mahasiswa</td>
+        </tr>
+        <tr>
+          <td>Nofi Bayu Darmawan</td>
+          <td>Startup Komerce dan kebijakan keamanan data</td>
+        </tr>
+      </table>
+    </div>
+    <a style="position: relative; z-index: 1; text-decoration: none;" href="https://invofest.com/talkshow">Laman IT TALKSHOW</a>
+  </div>
+  </div>
+  <footer style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #252525; padding: 10px; text-align: center;">
+    <p style="color: aliceblue;">Poltek Harber - 2024</p>
+  </footer>
+  </body>
+</html>
